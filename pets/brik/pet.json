@@ -1,0 +1,127 @@
+{
+  "id": "brik",
+  "displayName": "Brik",
+  "description": "A faithful Codex pet version of the Mecha Poly Bear: a compact mechanical poly bear with faceted stone-metal planes, round faceted ears, tiny deep-set eyes, thick paws, and signature circular side hatch joints.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Calm guardian baseline with subtle breathing, tiny blink, and planted compact posture."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "True directional walk rows used for movement and drag-facing behavior."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Quiet attentive lean with slight head tilt and focused eyes."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Restrained pleased pose with a small head lift and soft paw gesture."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Prone tucked nap row with closed eyes and minimal sleepy breathing."
+    },
+    "jump": {
+      "atlasRow": "jumping",
+      "notes": "Short compact heavy hop."
+    },
+    "loaf": {
+      "atlasRow": "failed",
+      "notes": "Spare atlas row repurposed as a compact seated loaf rest."
+    },
+    "patrol": {
+      "atlasRow": "running",
+      "notes": "Spare atlas row repurposed as a slow guarded patrol cycle."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "jump",
+    "failed": "loaf",
+    "waiting": "sleep",
+    "running": "patrol",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag intentionally reuses the true left and right walk rows."
+    },
+    "patrol": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "jump": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    },
+    "loaf": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    },
+    "sniff": {
+      "atlasRows": [
+        "review",
+        "running"
+      ],
+      "status": "approximated",
+      "notes": "No dedicated spare row remained after prioritizing patrol, jump, and loaf; Brik's curious row carries the nose-forward attentive feel and patrol adds the slow searching motion."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "generated-separately",
+    "manualVerification": [
+      "walk_left is a true left-facing strip, not an unchecked mirror",
+      "walk_right is a true right-facing strip",
+      "left drag uses the left-facing walk row",
+      "right drag uses the right-facing walk row",
+      "left drag never faces right and right drag never faces left",
+      "head planes, muzzle, eyes, body direction, side hatch, and paws stay directionally unified in both walk rows"
+    ]
+  },
+  "visualIdentityChecklist": [
+    "low-poly faceted head and cheeks remain readable",
+    "round ears remain present and faceted",
+    "circular side hatch joints remain visible",
+    "thick paws and compact heavy proportions remain readable",
+    "stone-brown and old brass palette stays consistent"
+  ]
+}

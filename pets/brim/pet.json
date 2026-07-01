@@ -1,0 +1,119 @@
+{
+  "id": "brim",
+  "displayName": "Brim",
+  "description": "A quiet summer duckling companion in a straw hat and goggles, floating in a blue-white swim ring beside a daisy stool and a flowered woven bag.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Calm breathing companion pose with the stool and woven bag resting quietly beside Brim."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "Directional scene-glide rows used for right-facing and left-facing drag behavior, not literal walking."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Soft curious glance toward the nearby bag and stool while keeping the vacation scene composed."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Gentle pleased uplift with a tiny swim-ring bounce and restrained wave."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Drowsy resting loop with closed eyes and a tucked, quiet summer companion posture."
+    },
+    "active": {
+      "atlasRow": "running",
+      "notes": "Gentle buoyant support loop with in-place bobbing and tiny delayed bag sway."
+    },
+    "hop": {
+      "atlasRow": "jumping",
+      "notes": "Very small buoyant support hop that keeps the full companion scene together."
+    },
+    "melancholy": {
+      "atlasRow": "failed",
+      "notes": "Tender low-energy droop that preserves Brim's calm charm without dramatic distress."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "scene-glide-right",
+    "running-left": "scene-glide-left",
+    "waving": "happy",
+    "jumping": "hop",
+    "failed": "melancholy",
+    "waiting": "sleep",
+    "running": "active",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "roll_right": {
+      "atlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Entire Brim scene glides right while preserving the relative stool-and-bag arrangement."
+    },
+    "roll_left": {
+      "atlasRow": "running-left",
+      "status": "implemented",
+      "notes": "Entire Brim scene glides left while preserving the relative stool-and-bag arrangement."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag uses true facing scene-glide rows; this is not a normal walk cycle."
+    },
+    "active_support": {
+      "atlasRow": "running",
+      "status": "implemented",
+      "notes": "Extra support loop retained to complete the fixed atlas."
+    },
+    "hop_support": {
+      "atlasRow": "jumping",
+      "status": "implemented",
+      "notes": "Extra support loop retained to complete the fixed atlas."
+    },
+    "low_energy_support": {
+      "atlasRow": "failed",
+      "status": "implemented",
+      "notes": "Extra support loop retained to complete the fixed atlas."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "mirrored-from-running-right-after-manual-review",
+    "rightRowDerivedFrom": "generated-directly",
+    "manualVerification": [
+      "left drag uses the true left-facing scene-glide row",
+      "right drag uses the true right-facing scene-glide row",
+      "left and right rows are not swapped",
+      "straw hat brim, goggles, beak direction, swim ring, stool, and woven bag all agree with drag direction",
+      "left drag never faces right",
+      "right drag never faces left",
+      "Brim remains readable at small size as a straw-hat-and-goggles swim-ring bird beside a daisy stool and flowered woven bag"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "thorn",
+  "displayName": "Thorn",
+  "description": "A gentle Machinarium-style mechanical hedgehog companion standing on an old wooden skateboard, holding a small rust-red booklet and carrying a tiny white flower at its side.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Quiet skateboard idle with tiny breathing and blink while the booklet and flower stay stable."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "Directional skateboard glide rows used for right and left movement."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Small focused look toward the rust-red booklet with a gentle head tilt."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Restrained pleased uplift with a tiny arm motion while keeping the booklet stable."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Soft drowsy resting loop on the skateboard with booklet and flower still present."
+    },
+    "active": {
+      "atlasRow": "running",
+      "notes": "Support loop for a quietly busy, attentive working posture."
+    },
+    "hop": {
+      "atlasRow": "jumping",
+      "notes": "Very small unified board-bounce hop used as a support motion."
+    },
+    "melancholy": {
+      "atlasRow": "failed",
+      "notes": "Low-energy tired or disappointed posture without detached effects."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "hop",
+    "failed": "melancholy",
+    "waiting": "sleep",
+    "running": "active",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag reuses the true left-facing and right-facing skateboard glide rows."
+    },
+    "active_support": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "hop_support": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    },
+    "low_power_support": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "generated-directly",
+    "rightRowDerivedFrom": "generated-directly",
+    "manualVerification": [
+      "left drag uses the true left-facing skateboard glide row",
+      "right drag uses the true right-facing skateboard glide row",
+      "walk_left and walk_right are not swapped",
+      "snout, eye, booklet, body, skateboard deck, and wheel direction agree with travel direction",
+      "left drag never faces right",
+      "right drag never faces left",
+      "Thorn remains readable at small size as a mechanical hedgehog with skateboard, booklet, and flower"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "tomoo",
+  "displayName": "Tomoo",
+  "description": "A faithful Codex pet recreation of the Mecha School Cat reference: a black-and-white little school cat with a blue backpack, a pink satchel, a gold collar ornament, and a gentle studious personality.",
+  "spritesheetPath": "spritesheet.webp",
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208
+  },
+  "atlasRowSemantics": {
+    "0": "idle",
+    "1": "walk_right",
+    "2": "walk_left",
+    "3": "happy",
+    "4": "jump",
+    "5": "study",
+    "6": "sleep",
+    "7": "tidy_bag",
+    "8": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "rowState": "idle",
+      "row": 0,
+      "match": "exact"
+    },
+    "walk_right": {
+      "rowState": "running-right",
+      "row": 1,
+      "match": "mapped-standard-row"
+    },
+    "walk_left": {
+      "rowState": "running-left",
+      "row": 2,
+      "match": "mapped-standard-row"
+    },
+    "curious": {
+      "rowState": "review",
+      "row": 8,
+      "match": "mapped-standard-row"
+    },
+    "happy": {
+      "rowState": "waving",
+      "row": 3,
+      "match": "mapped-standard-row"
+    },
+    "sleep": {
+      "rowState": "waiting",
+      "row": 6,
+      "match": "mapped-standard-row"
+    },
+    "drag": {
+      "leftRowState": "running-left",
+      "leftRow": 2,
+      "rightRowState": "running-right",
+      "rightRow": 1,
+      "match": "directional-row-mapping"
+    },
+    "jump": {
+      "rowState": "jumping",
+      "row": 4,
+      "match": "mapped-standard-row"
+    },
+    "study": {
+      "rowState": "failed",
+      "row": 5,
+      "match": "repurposed-standard-row"
+    },
+    "tidy_bag": {
+      "rowState": "running",
+      "row": 7,
+      "match": "repurposed-standard-row"
+    }
+  },
+  "unmappedRequestedActions": {
+    "observe": "Approximated by the curious row at atlas row 8 to preserve the base identity and avoid adding a new prop-heavy row.",
+    "run": "Approximated by the true directional walk rows at atlas rows 1 and 2. Atlas priority was given to walk_right, walk_left, drag-facing validation, sleep, study, and tidy_bag."
+  },
+  "identityReadabilityChecklist": [
+    "black-and-white school cat silhouette remains readable at small size",
+    "white muzzle, chest, belly, and paw socks stay visible",
+    "blue backpack remains a clear back-mounted identifier",
+    "pink satchel remains a clear front-side identifier",
+    "gold collar ornament remains visible at the neck",
+    "short fluffy tail remains visible in standing, walking, and resting poses"
+  ],
+  "dragFacingValidation": {
+    "validated": true,
+    "ruleLeft": "deltaX < 0 => facing left",
+    "ruleRight": "deltaX > 0 => facing right",
+    "leftFacingRowState": "running-left",
+    "leftFacingRow": 2,
+    "rightFacingRowState": "running-right",
+    "rightFacingRow": 1,
+    "manualReview": "Confirmed from final contact-sheet QA that row 2 is true left-facing and row 1 is true right-facing; the head, eyes, muzzle, chest angle, backpack, pink satchel, paws, and tail all align with the drag direction."
+  }
+}

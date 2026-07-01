@@ -1,0 +1,121 @@
+{
+  "id": "mallow",
+  "displayName": "Mallow",
+  "description": "A quiet cream ragdoll kitten with stitched cloth seams, a warm orange apron, tiny brass accents, and a soft plush tail.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Calm breathing and blinking loop with tiny apron and tail micro-movement."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "True directional walking rows for gentle rightward and leftward movement."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Soft head tilt and nose-down inspecting loop with no external prop."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Restrained pleased response with a brighter smile and tiny paw raise."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Compact tucked sleeping pose with apron still visible."
+    },
+    "follow": {
+      "atlasRow": "running",
+      "notes": "Gentle follow-ready trot support loop; not a replacement for true directional walking."
+    },
+    "shy": {
+      "atlasRow": "failed",
+      "notes": "Small timid tuck-and-recover loop used as the shy support state."
+    },
+    "stretch": {
+      "atlasRow": "jumping",
+      "notes": "Soft stretch-and-settle loop remapped onto the fixed jumping row."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "stretch",
+    "failed": "shy",
+    "waiting": "sleep",
+    "running": "follow",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag reuses the true left-facing and right-facing walk rows."
+    },
+    "follow": {
+      "atlasRow": "running",
+      "status": "implemented",
+      "notes": "Implemented as a soft follow-ready support loop in the fixed running row."
+    },
+    "shy": {
+      "atlasRow": "failed",
+      "status": "implemented",
+      "notes": "Implemented as a timid tuck-and-recover loop in the fixed failed row."
+    },
+    "stretch": {
+      "atlasRow": "jumping",
+      "status": "implemented",
+      "notes": "Implemented as a stretch-and-settle loop in the fixed jumping row."
+    },
+    "roll": {
+      "status": "not_independently_implemented",
+      "notes": "The fixed 8x9 atlas budget was used for stretch support instead of a separate roll row to keep silhouettes clearer and calmer."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "generated-directly",
+    "rightRowDerivedFrom": "generated-directly",
+    "manualVerification": [
+      "left drag uses the true left-facing walking row",
+      "right drag uses the true right-facing walking row",
+      "walk_left and walk_right are not swapped",
+      "left drag never faces right",
+      "right drag never faces left",
+      "head, eyes, body, apron, tail, and paw rhythm all agree with travel direction",
+      "Mallow remains readable at small size as a cream ragdoll kitten with an orange apron, visible stitches, and a soft plush tail"
+    ]
+  }
+}

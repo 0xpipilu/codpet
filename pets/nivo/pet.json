@@ -1,0 +1,123 @@
+{
+  "id": "nivo",
+  "displayName": "Nivo",
+  "description": "A faithful Codex pet recreation of a quiet snow-country baby macaque curled into a warm fluffy ball, with thick cream-tan winter fur, a soft pink face, tiny ears tucked into the coat, snow clinging to the fur, and a small brass collar detail in a gentle Machinarium winter mood.",
+  "spritesheetPath": "spritesheet.webp",
+  "basePath": "base.png",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Quiet curled-up baseline with tiny breath and blink motion."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "Short cautious true-facing walk rows used for movement and drag-facing behavior."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "A timid but attentive glance upward or outward at snow or a nearby sound."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "A shy satisfied smile with a tiny paw lift kept close to the body."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "A fully tucked sleeping snow-ball pose with soft breathing."
+    },
+    "shake": {
+      "atlasRow": "failed",
+      "notes": "A gentle self-brush and tiny body shake that keeps loosened snow close to the fur."
+    },
+    "warm_up": {
+      "atlasRow": "running",
+      "notes": "A self-hugging warm-up loop with timid cold-weather huddling."
+    },
+    "yawn": {
+      "atlasRow": "jumping",
+      "notes": "A sleepy tucked-in yawn loop while keeping the body compact and warm."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "yawn",
+    "failed": "shake",
+    "waiting": "sleep",
+    "running": "warm-up",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag reuses the true left-facing and right-facing walk rows."
+    },
+    "shake": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    },
+    "brush_snow": {
+      "atlasRow": "failed",
+      "status": "approximate",
+      "notes": "Shares the same row as shake; the loop includes a close-to-body self-brush before the tiny snow shake."
+    },
+    "warm_up": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "yawn": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    },
+    "sunbath": {
+      "status": "not_separately_implemented",
+      "notes": "The fixed atlas budget was used first for shake, warm_up, and yawn while preserving the required core actions."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "direct-generated-from-latest-approved-base",
+    "rightRowDerivedFrom": "direct-generated-from-latest-approved-base",
+    "manualVerification": [
+      "left drag uses a true left-facing strip",
+      "right drag uses a true right-facing strip",
+      "walk_left and walk_right are not swapped",
+      "head, muzzle, body lean, paws, feet, and fur flow face left in running-left",
+      "head, muzzle, body lean, paws, feet, and fur flow face right in running-right",
+      "left drag never faces right and right drag never faces left"
+    ]
+  }
+}

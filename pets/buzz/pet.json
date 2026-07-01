@@ -1,0 +1,120 @@
+{
+  "id": "buzz",
+  "displayName": "Buzz",
+  "description": "A faithful Codex pet recreation of a tiny mechanical bee pup with a brass antenna cap, cream puppy face, yellow-black bee stripes, soft pale wings, and a little flower always in paw.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Quiet standing idle with tiny blink, gentle breathing, and very small antenna and wing motion."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "True directional walk rows used for movement and drag-facing behavior."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Soft curious loop with a slight head tilt, forward lean, and flower-focused attention."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Restrained sweet happy loop with a tiny paw lift and brighter expression."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Cozy dozing loop with closed eyes, lowered body, and the flower still visible."
+    },
+    "follow": {
+      "atlasRow": "running",
+      "notes": "In-place eager follow loop with tiny anticipatory steps and companion-like readiness."
+    },
+    "fly": {
+      "atlasRow": "jumping",
+      "notes": "Gentle hover loop driven by the small wings, with a light buoyant rise and settle."
+    },
+    "sit_rest": {
+      "atlasRow": "failed",
+      "notes": "Gentle seated rest loop with a soft pause and recovery feeling, not a dramatic failure pose."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "fly",
+    "failed": "sit-rest",
+    "waiting": "sleep",
+    "running": "follow",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag uses the true left-facing and right-facing walk rows."
+    },
+    "follow": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "fly": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    },
+    "sit_rest": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    },
+    "sniff_flower": {
+      "approxAtlasRow": "review",
+      "status": "approximated",
+      "notes": "No dedicated extra row remained in the fixed atlas, so sniff_flower is approximated by the curious row, which includes a flower-focused lean and sniff-like attention shift."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "generated-directly",
+    "rightRowDerivedFrom": "generated-directly",
+    "manualVerification": [
+      "left drag uses a true left-facing strip",
+      "right drag uses a true right-facing strip",
+      "walk_left and walk_right are not swapped",
+      "left-facing row keeps head, eyes, nose, body, antennae, wings, bee stripes, and flower aligned left",
+      "right-facing row keeps head, eyes, nose, body, antennae, wings, bee stripes, and flower aligned right",
+      "left drag never faces right",
+      "right drag never faces left",
+      "antennae, bee stripes, small wings, and flower remain readable at small size"
+    ]
+  }
+}

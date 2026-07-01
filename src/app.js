@@ -416,8 +416,9 @@ Move your extracted pet folder directly into the Codex local pets folder (no cli
           const isLCP = overallIdx < 6;
           const loadingAttr = isLCP ? "" : 'loading="lazy"';
           const priorityAttr = isLCP ? 'fetchpriority="high"' : "";
+          const isCustom = pet.isCustom ? "custom-pet" : "";
           return `
-            <div class="tile" data-slug="${pet.slug}">
+            <div class="tile ${isCustom}" data-slug="${pet.slug}">
               <div class="tile-stage">
                 <!-- Evaporating Defrost Steam is dynamically injected on hover to minimize DOM size -->
                  <img class="sprite-static sprite-static-gray" width="73" height="79" ${loadingAttr} ${priorityAttr} data-pet-slug="${pet.slug}" alt="${esc(pet.displayName)} preview">
@@ -458,7 +459,7 @@ Move your extracted pet folder directly into the Codex local pets folder (no cli
           const elPlayer = tile.querySelector(".sprite-player");
 
           /* Initialize static previews (both gray and color use lossless base.webp for high performance & Retina sharpness) */
-          const imgUrl = `pets/${pet.slug}/base.webp`;
+          const imgUrl = pet.previewImage || `pets/${pet.slug}/base.webp`;
           elStaticGray.src = imgUrl;
           elStaticColor.src = imgUrl;
 
@@ -515,6 +516,14 @@ Move your extracted pet folder directly into the Codex local pets folder (no cli
 
         renderedCount = 0;
         
+        if (window.webkit) {
+          renderChunk(allPets, false);
+          if (window.codpetNativeSync && window.__codpetPayload) {
+            window.codpetNativeSync(window.__codpetPayload);
+          }
+          return;
+        }
+
         // 1. Render first chunk (12 pets) synchronously for instant layout & paint
         renderChunk(allPets.slice(0, 12), false);
 

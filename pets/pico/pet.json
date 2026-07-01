@@ -1,0 +1,125 @@
+{
+  "id": "pico",
+  "displayName": "Pico",
+  "description": "A quiet snow-country mechanical baby macaque with very thick winter fur, a pink sleepy face, a brass buckle scarf collar, and a small wind-up key on its back.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Quiet bundled idle with tiny breathing motion and a sleepy half-lidded expression."
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "notes": "True right-facing slow bundled snow-walk with the collar, face, and back key all facing right."
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "notes": "True left-facing slow bundled snow-walk with the collar, face, and back key all facing left."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Mild curious lift with a gentle more-awake look while keeping Pico shy and soft."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Warm pleased reaction with paws lifting toward the face and chest, not a loud greeting wave."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Curled sleep ball with closed eyes while the scarf buckle and back key remain visible."
+    },
+    "shake": {
+      "atlasRow": "failed",
+      "notes": "Compact shiver-and-snow-shake extra where snow stays close to the fur silhouette."
+    },
+    "warm_up": {
+      "atlasRow": "running",
+      "notes": "Non-directional paw-rubbing warm-up loop with tucked shoulders and no detached effects."
+    },
+    "gift_react": {
+      "atlasRow": "jumping",
+      "notes": "Tiny delighted lift and settle used for gentle received-a-gift reactions."
+    },
+    "sunbathe": {
+      "atlasRow": "waiting",
+      "status": "approximated",
+      "notes": "No dedicated atlas row was available; the curled warm resting row is the closest sun-warmed approximation."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "gift-react",
+    "failed": "shake",
+    "waiting": "sleep",
+    "running": "warm-up",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag reuses the true-facing walking rows."
+    },
+    "shake": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    },
+    "warm_up": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "gift_react": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    },
+    "sunbathe": {
+      "atlasRow": "waiting",
+      "status": "approximated",
+      "notes": "Atlas row budget did not allow a dedicated sunbathe strip, so the curled warm resting row is used as the nearest fit."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "deterministic-mirror-after-manual-verification",
+    "rightRowDerivedFrom": "generated-directly",
+    "manualVerification": [
+      "left drag uses the left-facing walk row and right drag uses the right-facing walk row",
+      "walk_left and walk_right are not swapped",
+      "left drag never faces right",
+      "right drag never faces left",
+      "the brass buckle scarf collar stays attached and agrees with body direction in both rows",
+      "the back wind-up key stays attached and agrees with body direction in both rows",
+      "the pink face, sleepy eyes, and thick winter-fur bundle remain readable at small size"
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "petal",
+  "displayName": "Petal",
+  "description": "A small round mecha flower pup with a cream body, dark flower-shaped spots, mismatched mechanical eyes, a side brass pod, and a calm companion presence faithfully recreated from the reference design.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Quiet baseline idle with tiny blink, tiny breathing, and a barely moving short tail."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "Short gentle directional puppy steps with true-facing right and left rows used for walk and drag semantics."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Soft puzzled curiosity with a mild head tilt and calm observant expression."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Restrained shy happiness with a tiny paw lift and softer expression."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Tucked peaceful dozing loop with the body settled low and eyes closed."
+    },
+    "follow": {
+      "atlasRow": "running",
+      "notes": "Gentle attentive follow energy, ready to trot after the user without frantic running."
+    },
+    "jump": {
+      "atlasRow": "jumping",
+      "notes": "Tiny buoyant hop with anticipation, lift, peak, descent, and settle."
+    },
+    "daydream": {
+      "atlasRow": "failed",
+      "notes": "Quiet absent-minded daydreaming pause repurposed from the fixed atlas row."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "jump",
+    "failed": "daydream",
+    "waiting": "sleep",
+    "running": "follow",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented",
+      "notes": "True right-facing short-step row."
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented",
+      "notes": "True left-facing short-step row."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag uses the true-facing locomotion rows."
+    },
+    "follow": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "jump": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    },
+    "daydream": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    },
+    "tidy_tail": {
+      "atlasRow": "waving",
+      "status": "approximated",
+      "notes": "Closest gentle expressive loop in the fixed atlas."
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "generated-directly",
+    "rightRowDerivedFrom": "generated-directly",
+    "manualVerification": [
+      "left drag uses the true left-facing row",
+      "right drag uses the true right-facing row",
+      "walk_left and walk_right are not swapped",
+      "left drag never faces right",
+      "right drag never faces left",
+      "flower-shaped spots, mismatched eyes, side brass pod, and short tail remain coordinated with body direction in both rows",
+      "Petal remains readable at small size as a flower-spotted mecha pup rather than a generic bear or plush toy"
+    ]
+  },
+  "baseSceneIdentity": {
+    "subject": "small round mechanical flower pup",
+    "posture": "compact seated or tucked puppy with a slightly oversized head",
+    "signatureFeatures": [
+      "cream and pale milk body",
+      "dark gray-brown irregular flower-shaped spot markings",
+      "one large pale eye and one smaller brass mechanical eye",
+      "circular brass side pod",
+      "short curled tail",
+      "round ears",
+      "subtle seam lines and tiny brass joints"
+    ],
+    "mood": "quiet, gentle, soft, daydreaming, and companion-like"
+  }
+}

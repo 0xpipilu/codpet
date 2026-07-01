@@ -1,0 +1,120 @@
+{
+  "id": "purl",
+  "displayName": "Purl",
+  "description": "A faithful embroidered plush tiger Codex pet with orange-gold yarn panels, a cream belly, thick stitched stripes, and a curled toy tail.",
+  "spritesheetPath": "spritesheet.webp",
+  "states": {
+    "idle": {
+      "atlasRow": "idle",
+      "notes": "Calm resting idle with tiny breathing and blink motion."
+    },
+    "walk": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "notes": "Short low plush steps used for directional movement and follow behavior."
+    },
+    "curious": {
+      "atlasRow": "review",
+      "notes": "Gentle head tilt, paw lift, and focused inquisitive look."
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "notes": "Soft pleased reaction with brighter smile and tiny paw lift."
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "notes": "Warm ground-hugging sleep loop with visible cream belly and curled tail."
+    },
+    "pet_react": {
+      "atlasRow": "running",
+      "notes": "Satisfied post-pat squish with half-closed eyes and tiny head press."
+    },
+    "roll": {
+      "atlasRow": "failed",
+      "notes": "Playful roll onto the back and curl back into a cuddly loaf."
+    },
+    "pounce": {
+      "atlasRow": "jumping",
+      "notes": "Tiny affectionate pounce forward with a very short lift and settle."
+    }
+  },
+  "atlasRowSemantics": {
+    "idle": "idle",
+    "running-right": "walk-right",
+    "running-left": "walk-left",
+    "waving": "happy",
+    "jumping": "pounce",
+    "failed": "roll",
+    "waiting": "sleep",
+    "running": "pet-react",
+    "review": "curious"
+  },
+  "requestedActionMap": {
+    "idle": {
+      "atlasRow": "idle",
+      "status": "implemented"
+    },
+    "walk_right": {
+      "atlasRow": "running-right",
+      "status": "implemented"
+    },
+    "walk_left": {
+      "atlasRow": "running-left",
+      "status": "implemented"
+    },
+    "curious": {
+      "atlasRow": "review",
+      "status": "implemented"
+    },
+    "happy": {
+      "atlasRow": "waving",
+      "status": "implemented"
+    },
+    "sleep": {
+      "atlasRow": "waiting",
+      "status": "implemented"
+    },
+    "drag": {
+      "leftAtlasRow": "running-left",
+      "rightAtlasRow": "running-right",
+      "status": "implemented",
+      "notes": "Directional drag reuses the true-facing locomotion rows."
+    },
+    "roll": {
+      "atlasRow": "failed",
+      "status": "implemented"
+    },
+    "pet_react": {
+      "atlasRow": "running",
+      "status": "implemented"
+    },
+    "follow": {
+      "atlasRows": [
+        "running-right",
+        "running-left"
+      ],
+      "status": "approximated_with_walk_rows",
+      "notes": "Follow uses the same true-facing short run rows as walk so the tiger stays low and companion-like."
+    },
+    "pounce": {
+      "atlasRow": "jumping",
+      "status": "implemented"
+    }
+  },
+  "dragFacingValidation": {
+    "rule": "deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses": "running-left",
+    "rightDragUses": "running-right",
+    "leftRowDerivedFrom": "mirrored-from-running-right-after-manual-review",
+    "manualVerification": [
+      "walk_left and walk_right are not swapped",
+      "left drag uses the true left-facing row",
+      "right drag uses the true right-facing row",
+      "head, body, stitched stripes, paws, and curled tail stay directionally unified in both walk rows",
+      "left drag never faces right",
+      "right drag never faces left"
+    ]
+  }
+}
