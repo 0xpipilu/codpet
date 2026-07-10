@@ -2,7 +2,7 @@
 set -euo pipefail
 
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-WORKSPACE_ROOT="$(cd "$PROJECT_ROOT/.." && pwd)"
+WORKSPACE_ROOT="$(cd "$PROJECT_ROOT/../.." && pwd)"
 APP_NAME="CodpetPersonal"
 PRODUCT_NAME="CodpetPersonal"
 DEVELOPER_DIR_CANDIDATE="/Applications/Xcode.app/Contents/Developer"

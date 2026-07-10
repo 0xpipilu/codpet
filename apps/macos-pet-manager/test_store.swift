@@ -108,8 +108,9 @@ struct PetRepository {
     
     func bundledCatalogRoot() -> URL? {
         // Since we are running outside the app bundle, we simulate this by looking at the built app
-        let appBundlePath = "/Users/chen/Documents/codex pet 0524/macos-pet-manager/dist/CodpetPersonal.app"
-        let catalogURL = URL(fileURLWithPath: appBundlePath).appendingPathComponent("Contents/Resources/Catalog")
+        let projectRoot = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
+        let appBundleURL = projectRoot.appendingPathComponent("dist/CodpetPersonal.app")
+        let catalogURL = appBundleURL.appendingPathComponent("Contents/Resources/Catalog")
         guard fileManager.fileExists(atPath: catalogURL.appendingPathComponent("index.json").path),
               fileManager.fileExists(atPath: catalogURL.appendingPathComponent("pets").path) else {
             return nil

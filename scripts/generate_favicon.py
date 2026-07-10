@@ -5,7 +5,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 BIRD_PATH = ROOT / "pets" / "blackbird" / "base.png"
-FAVICON_PATH = ROOT / "favicon.png"
+FAVICON_PATH = ROOT / "assets" / "brand" / "favicon.png"
 
 def make_favicon():
     if not BIRD_PATH.exists():

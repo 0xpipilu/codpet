@@ -8,7 +8,7 @@ Codpet is a personal Codex Pet ecosystem. The repository currently combines the 
 
 The public gallery for browsing and previewing the curated pet collection.
 
-### `macos-pet-manager/`
+### `apps/macos-pet-manager/`
 
 CodpetPersonal, an experimental native macOS manager for browsing installed pets, importing local folders, installing pets, and applying a selected pet to Codex.
 

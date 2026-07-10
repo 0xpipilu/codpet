@@ -67,13 +67,13 @@ Browse the library online at: **[https://cod.pet/](https://cod.pet/)**
 
 **CodpetPersonal** is an experimental native macOS companion for browsing installed pets, importing local pet folders, installing pets, and applying a selected pet to Codex.
 
-- Source and build instructions: [`macos-pet-manager/`](macos-pet-manager/)
+- Source and build instructions: [`apps/macos-pet-manager/`](apps/macos-pet-manager/)
 - Product roadmap: [`docs/roadmap.md`](docs/roadmap.md)
 - This is a personal project and is not an official OpenAI product.
 
-![CodpetPersonal preview](macos-pet-manager/screenshots/codpetpersonal-preview.png)
+![CodpetPersonal preview](apps/macos-pet-manager/screenshots/codpetpersonal-preview.png)
 
-[Watch the CodpetPersonal demo video](macos-pet-manager/screenshots/codpetpersonal-demo.mp4)
+[Watch the CodpetPersonal demo video](apps/macos-pet-manager/screenshots/codpetpersonal-demo.mp4)
 
 ### Repository Structure
 
@@ -86,9 +86,12 @@ pets/
 index.json            # Generated catalog data in JSON
 catalog.js            # Browser-ready catalog payload
 index.html            # Ultra-minimalist showcase page
-favicon.png           # Premium HD browser tab icon (Blackbird logo)
-og-image.png          # High-definition social preview cover art
-macos-pet-manager/    # Native macOS CodpetPersonal prototype
+assets/
+  brand/              # Logo, favicon, and social preview assets
+  icons/              # Website interface icons
+apps/
+  macos-pet-manager/  # Native macOS CodpetPersonal prototype
+  macos-hybrid-app/   # Experimental hybrid macOS prototype
 docs/                 # Product roadmap and project notes
 scripts/
   build_index.py      # Script to rebuild catalog index
@@ -129,13 +132,13 @@ python3 scripts/generate_favicon.py
 
 **CodpetPersonal** 是一个实验性的原生 macOS pet 管理器，用于浏览已安装 pet、导入本地 pet、安装 pet，以及尝试将选中的 pet 应用到 Codex。
 
-- 源码与构建说明：[`macos-pet-manager/`](macos-pet-manager/)
+- 源码与构建说明：[`apps/macos-pet-manager/`](apps/macos-pet-manager/)
 - 产品路线图：[`docs/roadmap.md`](docs/roadmap.md)
 - 这是个人项目，不是 OpenAI 官方产品。
 
-![CodpetPersonal 预览](macos-pet-manager/screenshots/codpetpersonal-preview.png)
+![CodpetPersonal 预览](apps/macos-pet-manager/screenshots/codpetpersonal-preview.png)
 
-[观看 CodpetPersonal 录屏演示](macos-pet-manager/screenshots/codpetpersonal-demo.mp4)
+[观看 CodpetPersonal 录屏演示](apps/macos-pet-manager/screenshots/codpetpersonal-demo.mp4)
 
 ### 线上互动预览
 
@@ -154,9 +157,12 @@ pets/
 index.json            # 自动生成的整站 JSON 索引
 catalog.js            # 浏览器直接加载的 JS 索引
 index.html            # 超极简的线上画廊单页面
-favicon.png           # 高清浏览器页签图标（以黑鸟形象为 Logo）
-og-image.png          # 高清社交预览封面大图
-macos-pet-manager/     # 原生 macOS CodpetPersonal 原型
+assets/
+  brand/               # Logo、favicon 和社交预览资源
+  icons/               # 网站界面图标
+apps/
+  macos-pet-manager/   # 原生 macOS CodpetPersonal 原型
+  macos-hybrid-app/    # 实验性混合 macOS 原型
 docs/                  # 产品路线图和项目说明
 scripts/
   build_index.py      # 重建整站索引的 Python 脚本

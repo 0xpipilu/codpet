@@ -23,24 +23,24 @@ CodpetPersonal 不接受第三方 pet 提交。未来的可视化 pet 设计器�
 
 这个实现只在当前目录下：
 
-- `macos-pet-manager/`
+- `apps/macos-pet-manager/`
 
 不会依赖或改写：
 
 - `macos-app/`
-- `macos-hybrid-app/`
+- `apps/macos-hybrid-app/`
 
 ## 构建
 
 ```bash
-cd macos-pet-manager
+cd apps/macos-pet-manager
 ./script/build_and_run.sh
 ```
 
 只构建不启动：
 
 ```bash
-cd macos-pet-manager
+cd apps/macos-pet-manager
 ./script/build_and_run.sh --build-only
 ```
 
@@ -55,7 +55,7 @@ cd macos-pet-manager
 
 - 即时应用依赖当前 Codex 运行状态和兼容桥接，不能视为稳定的官方公共接口。
 - 当前管理器的数据模型主要围绕 8×9 标准 atlas；面向新版 v2 pet 的 8×11 atlas 和 16 个方向还需要单独升级。
-- 生成式 pet 设计、视觉风格选择、动画生成和自动安装不属于当前版本，记录在仓库的 [`docs/roadmap.md`](../docs/roadmap.md)。
+- 生成式 pet 设计、视觉风格选择、动画生成和自动安装不属于当前版本，记录在仓库的 [`docs/roadmap.md`](../../docs/roadmap.md)。
 
 ## 隐私和授权边界
 
