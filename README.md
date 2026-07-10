@@ -27,6 +27,10 @@ Browse the library online at: **[https://cod.pet/](https://cod.pet/)**
 - Product roadmap: [`docs/roadmap.md`](docs/roadmap.md)
 - This is a personal project and is not an official OpenAI product.
 
+![CodpetPersonal preview](macos-pet-manager/screenshots/codpetpersonal-preview.png)
+
+[Watch the CodpetPersonal demo video](macos-pet-manager/screenshots/codpetpersonal-demo.mp4)
+
 ### Repository Structure
 
 ```text
@@ -84,6 +88,10 @@ python3 scripts/generate_favicon.py
 - 源码与构建说明：[`macos-pet-manager/`](macos-pet-manager/)
 - 产品路线图：[`docs/roadmap.md`](docs/roadmap.md)
 - 这是个人项目，不是 OpenAI 官方产品。
+
+![CodpetPersonal 预览](macos-pet-manager/screenshots/codpetpersonal-preview.png)
+
+[观看 CodpetPersonal 录屏演示](macos-pet-manager/screenshots/codpetpersonal-demo.mp4)
 
 ### 线上互动预览
 

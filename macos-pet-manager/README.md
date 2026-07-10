@@ -13,6 +13,12 @@ CodpetPersonal 是 Codpet 项目中的原生 macOS pet 管理器原型。它和 
 
 CodpetPersonal 不接受第三方 pet 提交。未来的可视化 pet 设计器会作为单独的 `Codpet Studio` 方向规划，不与当前管理器混在一起。
 
+## Preview
+
+![CodpetPersonal preview](screenshots/codpetpersonal-preview.png)
+
+[Watch the CodpetPersonal demo video](screenshots/codpetpersonal-demo.mp4)
+
 ## 目录隔离
 
 这个实现只在当前目录下：
