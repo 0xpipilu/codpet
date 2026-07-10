@@ -51,17 +51,25 @@ def build_readme():
 <a name="english"></a>
 ## English Description
 
-**Codpet** (formerly Codex Pets) is a curated collection of beautiful animated pixel companions designed to live in your editor or developer environment.
+**Codpet** (formerly Codex Pets) is a personal, curated collection of animated companions designed to live in your editor or developer environment. It is maintained as a personal project and does not accept third-party pet submissions.
 
 This repository serves as:
 - **Asset Storage**: Every pet is neatly organized in its own folder containing its runtime metadata (`pet.json`) and spritesheet (`spritesheet.webp`).
-- **Interactive Showcase**: A high-performance, minimalist static web gallery deployed on GitHub Pages at [https://0xpipilu.github.io/codpet/](https://0xpipilu.github.io/codpet/) (formerly `codex-pets`).
+- **Interactive Showcase**: A high-performance, minimalist static web gallery deployed at [https://cod.pet/](https://cod.pet/).
 
 ### Live Preview & Showcase
 
-Browse the library online at: **[https://0xpipilu.github.io/codpet/](https://0xpipilu.github.io/codpet/)**
+Browse the library online at: **[https://cod.pet/](https://cod.pet/)**
 - **Hover to Preview**: Move your mouse over any pet to see its accelerated interactive animations.
 - **One-click Download**: Click `Download` on hover to grab a packaged `.zip` containing the pet's complete assets for easy installation.
+
+### Native macOS App
+
+**CodpetPersonal** is an experimental native macOS companion for browsing installed pets, importing local pet folders, installing pets, and applying a selected pet to Codex.
+
+- Source and build instructions: [`macos-pet-manager/`](macos-pet-manager/)
+- Product roadmap: [`docs/roadmap.md`](docs/roadmap.md)
+- This is a personal project and is not an official OpenAI product.
 
 ### Repository Structure
 
@@ -76,6 +84,8 @@ catalog.js            # Browser-ready catalog payload
 index.html            # Ultra-minimalist showcase page
 favicon.png           # Premium HD browser tab icon (Blackbird logo)
 og-image.png          # High-definition social preview cover art
+macos-pet-manager/    # Native macOS CodpetPersonal prototype
+docs/                 # Product roadmap and project notes
 scripts/
   build_index.py      # Script to rebuild catalog index
   generate_thumbnails.py # Script to generate base thumbnails
@@ -105,15 +115,23 @@ python3 scripts/generate_favicon.py
 <a name="简体中文"></a>
 ## 简体中文说明
 
-**Codpet**（原名 Codex Pets）是一个专为编辑器和开发环境设计的像素动画宠物精选库。
+**Codpet**（原名 Codex Pets）是一个由我个人持续整理的开发者宠物作品库，面向编辑器和开发环境。项目不接受第三方 pet 提交。
 
 本仓库主要用途：
 - **资源存储**：每只宠物拥有独立目录，包含其运行时元数据 (`pet.json`) 及精灵图 (`spritesheet.webp`)。
-- **互动展示页**：部署于 GitHub Pages 的极简、高性能展示画廊，线上地址：[https://0xpipilu.github.io/codpet/](https://0xpipilu.github.io/codpet/)。
+- **互动展示页**：部署于 [https://cod.pet/](https://cod.pet/) 的极简、高性能展示画廊。
+
+### 原生 macOS App
+
+**CodpetPersonal** 是一个实验性的原生 macOS pet 管理器，用于浏览已安装 pet、导入本地 pet、安装 pet，以及尝试将选中的 pet 应用到 Codex。
+
+- 源码与构建说明：[`macos-pet-manager/`](macos-pet-manager/)
+- 产品路线图：[`docs/roadmap.md`](docs/roadmap.md)
+- 这是个人项目，不是 OpenAI 官方产品。
 
 ### 线上互动预览
 
-在线浏览地址：**[https://0xpipilu.github.io/codpet/](https://0xpipilu.github.io/codpet/)**
+在线浏览地址：**[https://cod.pet/](https://cod.pet/)**
 - **悬停预览**：将鼠标悬停在任意宠物上，即可加速循环预览其所有状态的动态效果。
 - **一键下载**：悬浮时点击 `Download` 即可一键下载包含该宠物完整元数据与精灵图的 `.zip` 压缩包。
 
@@ -130,6 +148,8 @@ catalog.js            # 浏览器直接加载的 JS 索引
 index.html            # 超极简的线上画廊单页面
 favicon.png           # 高清浏览器页签图标（以黑鸟形象为 Logo）
 og-image.png          # 高清社交预览封面大图
+macos-pet-manager/     # 原生 macOS CodpetPersonal 原型
+docs/                  # 产品路线图和项目说明
 scripts/
   build_index.py      # 重建整站索引的 Python 脚本
   generate_thumbnails.py # 从精灵图自动裁剪生成静态缩略图的脚本

@@ -1,0 +1,5 @@
+[run]
+command = "./script/build_and_run.sh"
+
+[build]
+command = "./script/build_and_run.sh --build-only"
