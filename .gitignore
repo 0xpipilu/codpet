@@ -3,6 +3,13 @@ output/
 runs/
 tmp/
 
+# Local-only experiments and source material
+/apps/_experiments/
+/apps/_local-assets/
+/assets/source/
+/scripts/local/
+/archives/
+
 .DS_Store
 __pycache__/
 
@@ -14,4 +21,3 @@ dist/
 **/.build/
 **/dist/
 **/Packages/
-

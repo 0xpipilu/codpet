@@ -25,6 +25,8 @@ Browse the library online at: **[https://cod.pet/](https://cod.pet/)**
 
 - Source and build instructions: [`apps/macos-pet-manager/`](apps/macos-pet-manager/)
 - Product roadmap: [`docs/roadmap.md`](docs/roadmap.md)
+- Architecture notes: [`docs/architecture.md`](docs/architecture.md)
+- Asset policy: [`docs/asset-policy.md`](docs/asset-policy.md)
 - This is a personal project and is not an official OpenAI product.
 
 ![CodpetPersonal preview](apps/macos-pet-manager/screenshots/codpetpersonal-preview.png)
@@ -90,6 +92,8 @@ python3 scripts/generate_favicon.py
 
 - 源码与构建说明：[`apps/macos-pet-manager/`](apps/macos-pet-manager/)
 - 产品路线图：[`docs/roadmap.md`](docs/roadmap.md)
+- 项目架构说明：[`docs/architecture.md`](docs/architecture.md)
+- 素材政策：[`docs/asset-policy.md`](docs/asset-policy.md)
 - 这是个人项目，不是 OpenAI 官方产品。
 
 ![CodpetPersonal 预览](apps/macos-pet-manager/screenshots/codpetpersonal-preview.png)
