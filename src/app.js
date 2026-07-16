@@ -636,7 +636,10 @@ Move your extracted pet folder directly into the Codex local pets folder (no cli
             catalog = { pets: INLINED_PETS };
           }
 
-          if (!catalog) {
+          const inlineCatalogHasAtlas = catalog && Array.isArray(catalog.pets) &&
+            catalog.pets.every(p => p && p.atlas && p.atlas.sheetHeight);
+
+          if (!inlineCatalogHasAtlas) {
             catalogFetchNeeded = true;
             catalog = await fetch("./index.json?v=20260716-frames").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
           }

@@ -74,7 +74,10 @@ def main():
     with open(js_path, "r", encoding="utf-8") as f:
         js = f.read()
 
-    # Load index.json and extract lightweight pets for inlining
+    # Load index.json and inline the animation metadata needed for first paint.
+    # The gallery boots from this catalog before fetching the full index, so
+    # omitting atlas dimensions makes newer 8x11 sheets fall back to the
+    # legacy 1872px height and expose two rows in one frame window.
     print("Inlining optimized pet catalog...")
     index_json_path = "index.json"
     if os.path.exists(index_json_path):
@@ -83,15 +86,15 @@ def main():
             with open(index_json_path, "r", encoding="utf-8") as f:
                 catalog_data = json.load(f)
             pets_raw = catalog_data.get("pets", [])
-            # Extract only slug and displayName
-            light_pets = [{"slug": p["slug"], "displayName": p["displayName"]} for p in pets_raw]
+            # Keep atlas, row, and asset metadata available during first paint.
+            light_pets = pets_raw
             # Convert to string without unnecessary spacing
             inlined_json = json.dumps(light_pets, ensure_ascii=True, separators=(',', ':'))
             # Replace placeholder in JS
             placeholder = "const INLINED_PETS = [];"
             if placeholder in js:
                 js = js.replace(placeholder, f"const INLINED_PETS = {inlined_json};")
-                print(f"  - Inlined {len(light_pets)} pets into app.js.")
+                print(f"  - Inlined {len(light_pets)} pets and animation metadata into app.js.")
             else:
                 print("  - Warning: Placeholder 'const INLINED_PETS = [];' not found in app.js!")
         except Exception as e:
