@@ -14,11 +14,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -118,11 +118,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -222,11 +222,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -326,11 +326,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -430,11 +430,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -534,11 +534,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -638,11 +638,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -751,11 +751,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 8,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -855,11 +855,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -959,11 +959,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1063,11 +1063,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1167,11 +1167,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1271,11 +1271,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1375,11 +1375,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1479,11 +1479,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1583,11 +1583,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {
@@ -1687,11 +1687,11 @@ window.__CODEX_PETS__ = {
       "stateCount": 0,
       "atlas": {
         "columns": 8,
-        "rows": 9,
+        "rows": 11,
         "frameWidth": 192,
         "frameHeight": 208,
         "sheetWidth": 1536,
-        "sheetHeight": 1872
+        "sheetHeight": 2288
       },
       "previewRows": [
         {

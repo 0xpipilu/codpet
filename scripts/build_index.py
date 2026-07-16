@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from PIL import Image
+
 
 ROOT = Path(__file__).resolve().parent.parent
 PETS_DIR = ROOT / "pets"
@@ -31,6 +33,36 @@ ATLAS_SPEC = {
     "sheetWidth": 1536,
     "sheetHeight": 1872,
 }
+
+
+def build_atlas(data: dict, spritesheet_file: Path) -> dict:
+    """Build per-pet atlas metadata from pet.json and the actual image size."""
+    raw = data.get("atlas") or {}
+    atlas = {
+        "columns": raw.get("columns", ATLAS_SPEC["columns"]),
+        "rows": raw.get("rows", ATLAS_SPEC["rows"]),
+        "frameWidth": raw.get("frameWidth", raw.get("cellWidth", ATLAS_SPEC["frameWidth"])),
+        "frameHeight": raw.get("frameHeight", raw.get("cellHeight", ATLAS_SPEC["frameHeight"])),
+        "sheetWidth": raw.get("sheetWidth", raw.get("width", ATLAS_SPEC["sheetWidth"])),
+        "sheetHeight": raw.get("sheetHeight", raw.get("height", ATLAS_SPEC["sheetHeight"])),
+    }
+
+    # The newer installed pets use the same 192x208 cells but have 11 rows.
+    # Always trust the actual spritesheet dimensions so CSS background scaling
+    # cannot expose part of the next row inside a single frame window.
+    try:
+        with Image.open(spritesheet_file) as image:
+            actual_width, actual_height = image.size
+        atlas["sheetWidth"] = actual_width
+        atlas["sheetHeight"] = actual_height
+        if "columns" not in raw:
+            atlas["columns"] = actual_width // atlas["frameWidth"]
+        if "rows" not in raw:
+            atlas["rows"] = actual_height // atlas["frameHeight"]
+    except (FileNotFoundError, OSError, ValueError):
+        pass
+
+    return {key: int(value) for key, value in atlas.items()}
 
 
 def build_preview_rows(data: dict) -> list[dict]:
@@ -78,6 +110,7 @@ def build_catalog() -> dict:
 
         data = json.loads(pet_json.read_text(encoding="utf-8"))
         spritesheet_path = data.get("spritesheetPath", "spritesheet.webp")
+        spritesheet_file = pet_dir / spritesheet_path
         state_names = sorted((data.get("states") or {}).keys())
         preview_rows = build_preview_rows(data)
 
@@ -93,7 +126,7 @@ def build_catalog() -> dict:
                 "spritesheetFile": f"pets/{pet_dir.name}/{spritesheet_path}",
                 "stateNames": state_names,
                 "stateCount": len(state_names),
-                "atlas": ATLAS_SPEC,
+                "atlas": build_atlas(data, spritesheet_file),
                 "previewRows": preview_rows,
                 "defaultPreviewRow": preview_rows[0]["key"] if preview_rows else None,
             }
