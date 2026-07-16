@@ -638,7 +638,7 @@ Move your extracted pet folder directly into the Codex local pets folder (no cli
 
           if (!catalog) {
             catalogFetchNeeded = true;
-            catalog = await fetch("./index.json?v=20260601").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+            catalog = await fetch("./index.json?v=20260716-frames").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
           }
 
           // 3. Catalog fetched: set to 85%
