@@ -1,0 +1,51 @@
+{
+  "id": "moss-tail",
+  "displayName": "Moss Tail",
+  "description": "A hand-painted moss-green fox-squirrel companion with a huge curled tail, cream chest, alert eyes, black ink contours, and a warm orange nose.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp",
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208
+  },
+  "states": {
+    "idle": {"atlasRow":"idle","notes":"Calm breathing and blink with a settled tail."},
+    "walk": {"atlasRows":["running-right","running-left"],"notes":"True opposite drag-facing gait with the attached tail following."},
+    "curious": {"atlasRow":"review","notes":"Focused lean and eye attention without new props."},
+    "happy": {"atlasRow":"waving","notes":"Small paw-only greeting."},
+    "sleep": {"atlasRow":"waiting","notes":"Patient expectant pose used for approval or input."},
+    "jump": {"atlasRow":"jumping","notes":"Connected vertical playful jump without effects."},
+    "failed": {"atlasRow":"failed","notes":"Gentle slump and recovery."},
+    "working": {"atlasRow":"running","notes":"Focused in-place task processing."}
+  },
+  "atlasRowSemantics": {
+    "idle":"idle",
+    "running-right":"walk-right",
+    "running-left":"walk-left",
+    "waving":"happy",
+    "jumping":"jump",
+    "failed":"failed",
+    "waiting":"waiting-for-input",
+    "running":"working",
+    "review":"review",
+    "look-row-9":"000-through-157.5-clockwise",
+    "look-row-10":"180-through-337.5-clockwise"
+  },
+  "dragFacingValidation": {
+    "rule":"deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses":"running-left",
+    "rightDragUses":"running-right",
+    "leftRowDerivedFrom":"framewise-horizontal-mirror-preserving-order",
+    "rightRowDerivedFrom":"generated-directly",
+    "manualVerification":"Both drag rows are true opposite directions and keep Moss Tail's head, paws, torso, and attached tail coherent."
+  },
+  "qa": {
+    "validation":"qa/validation.json",
+    "despill":"qa/despill-report.json",
+    "directionSemantics":"qa/direction-semantics.json",
+    "continuity":"qa/direction-continuity.json",
+    "review":"qa/review.json"
+  }
+}

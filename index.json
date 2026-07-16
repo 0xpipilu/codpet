@@ -1,6 +1,1783 @@
 {
-  "count": 117,
+  "count": 134,
   "pets": [
+    {
+      "slug": "sunbeam",
+      "folder": "pets/sunbeam",
+      "id": "sunbeam",
+      "displayName": "Sunbeam",
+      "description": "A soft yellow hand-drawn cat with a wavy silhouette and an upright curling tail.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/sunbeam/pet.json",
+      "spritesheetFile": "pets/sunbeam/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "crayon-pup",
+      "folder": "pets/crayon-pup",
+      "id": "crayon-pup",
+      "displayName": "Crayon Pup",
+      "description": "A warm hand-drawn orange-and-white puppy with soft crayon texture, a round patchy body, expressive tiny eyes, and a curled brush-like tail.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/crayon-pup/pet.json",
+      "spritesheetFile": "pets/crayon-pup/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "jade-tiger",
+      "folder": "pets/jade-tiger",
+      "id": "jade-tiger",
+      "displayName": "Jade Tiger",
+      "description": "A hand-drawn green tiger cat with black stripes, cream fur, orange accents, and an expressive curved tail.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/jade-tiger/pet.json",
+      "spritesheetFile": "pets/jade-tiger/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "mosskin",
+      "folder": "pets/mosskin",
+      "id": "mosskin",
+      "displayName": "Mosskin",
+      "description": "A gentle watercolor hedgehog with a pale green quilled back and a soft white face.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/mosskin/pet.json",
+      "spritesheetFile": "pets/mosskin/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "inkcoil",
+      "folder": "pets/inkcoil",
+      "id": "inkcoil",
+      "displayName": "Inkcoil",
+      "description": "A hand-drawn black ink caterpillar-cat with two small curved feet, a pale face, orange mouth, and a long bristled body curling to the right.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/inkcoil/pet.json",
+      "spritesheetFile": "pets/inkcoil/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "corsair-fox",
+      "folder": "pets/corsair-fox",
+      "id": "corsair-fox",
+      "displayName": "Corsair Fox",
+      "description": "A hand-painted pirate fox who carries a wooden cutlass and keeps watch with a bright golden tail tip.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/corsair-fox/pet.json",
+      "spritesheetFile": "pets/corsair-fox/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "frostwhisk",
+      "folder": "pets/frostwhisk",
+      "id": "frostwhisk",
+      "displayName": "Frostwhisk",
+      "description": "A pale watercolor snow-cat companion with yellow eyes, soft blue shading, pointed ears, short paws, and a broad fluffy tail.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/frostwhisk/pet.json",
+      "spritesheetFile": "pets/frostwhisk/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "moss-tail",
+      "folder": "pets/moss-tail",
+      "id": "moss-tail",
+      "displayName": "Moss Tail",
+      "description": "A hand-painted moss-green fox-squirrel companion with a huge curled tail, cream chest, alert eyes, black ink contours, and a warm orange nose.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/moss-tail/pet.json",
+      "spritesheetFile": "pets/moss-tail/spritesheet.webp",
+      "stateNames": [
+        "curious",
+        "failed",
+        "happy",
+        "idle",
+        "jump",
+        "sleep",
+        "walk",
+        "working"
+      ],
+      "stateCount": 8,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": "idle",
+          "notes": "Calm breathing and blink with a settled tail."
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": "walk-right",
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": "walk-left",
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": "happy",
+          "notes": "Small paw-only greeting."
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": "jump",
+          "notes": "Connected vertical playful jump without effects."
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": "failed",
+          "notes": "Gentle slump and recovery."
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": "waiting-for-input",
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": "working",
+          "notes": "Focused in-place task processing."
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": "review",
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "tidecurl",
+      "folder": "pets/tidecurl",
+      "id": "tidecurl",
+      "displayName": "Tidecurl",
+      "description": "A hand-painted blue seahorse pet with an orange snout, curled tail, yellow ringed eye, and deep blue dorsal fin.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/tidecurl/pet.json",
+      "spritesheetFile": "pets/tidecurl/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "tiggle",
+      "folder": "pets/tiggle",
+      "id": "tiggle",
+      "displayName": "Tiggle",
+      "description": "A round hand-drawn cream tiger cub with pale blue eyes, bold black stripes, short legs, and a curled upright tail.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/tiggle/pet.json",
+      "spritesheetFile": "pets/tiggle/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "frostpuff",
+      "folder": "pets/frostpuff",
+      "id": "frostpuff",
+      "displayName": "Frostpuff",
+      "description": "A soft ice-blue fluffy four-legged companion with tiny warm coral facial marks and a gentle curious presence.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/frostpuff/pet.json",
+      "spritesheetFile": "pets/frostpuff/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": "idle-blink",
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": "walk-right",
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": "walk-left-mirrored-approved",
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": "greeting",
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": "jump",
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": "deflated-reaction",
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": "needs-input",
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": "active-processing",
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": "focused-review",
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "pepper",
+      "folder": "pets/pepper",
+      "id": "pepper",
+      "displayName": "Pepper",
+      "description": "A compact hand-drawn red pepper companion with an attached green leafy crown and a shy spicy personality.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/pepper/pet.json",
+      "spritesheetFile": "pets/pepper/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "nuzzle",
+      "folder": "pets/nuzzle",
+      "id": "nuzzle",
+      "displayName": "Nuzzle",
+      "description": "A compact cream-white hand-drawn plush-like pet with dark brown outline, blue lower wrap, green side attachment, blue-gray front piece, and peach paws.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/nuzzle/pet.json",
+      "spritesheetFile": "pets/nuzzle/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "cotton",
+      "folder": "pets/cotton",
+      "id": "cotton",
+      "displayName": "Cotton",
+      "description": "A tiny gentle white rabbit with long pink-lined ears and a soft hand-drawn look.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/cotton/pet.json",
+      "spritesheetFile": "pets/cotton/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "lao",
+      "folder": "pets/lao",
+      "id": "lao",
+      "displayName": "Lao",
+      "description": "A white cat-rabbit hybrid childlike mascot with a round face, triangular ears, half-closed oval eyes, tiny black nose, smiling mouth, pale-blue spots, and a connected golden fishing net.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/lao/pet.json",
+      "spritesheetFile": "pets/lao/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "frizzle",
+      "folder": "pets/frizzle",
+      "id": "frizzle",
+      "displayName": "Frizzle",
+      "description": "A tiny fluffy pink sheep happily eating fries from a red carton.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/frizzle/pet.json",
+      "spritesheetFile": "pets/frizzle/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
+    {
+      "slug": "clover",
+      "folder": "pets/clover",
+      "id": "clover",
+      "displayName": "Clover",
+      "description": "A hand-drawn black-and-white cat with a green hat, orange ribbons, and bright amber eyes.",
+      "spritesheetPath": "spritesheet.webp",
+      "petJsonPath": "pets/clover/pet.json",
+      "spritesheetFile": "pets/clover/spritesheet.webp",
+      "stateNames": [],
+      "stateCount": 0,
+      "atlas": {
+        "columns": 8,
+        "rows": 9,
+        "frameWidth": 192,
+        "frameHeight": 208,
+        "sheetWidth": 1536,
+        "sheetHeight": 1872
+      },
+      "previewRows": [
+        {
+          "key": "idle",
+          "label": "Idle",
+          "rowIndex": 0,
+          "frames": 6,
+          "durationMs": 1100,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-right",
+          "label": "Run Right",
+          "rowIndex": 1,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running-left",
+          "label": "Run Left",
+          "rowIndex": 2,
+          "frames": 8,
+          "durationMs": 980,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waving",
+          "label": "Waving",
+          "rowIndex": 3,
+          "frames": 4,
+          "durationMs": 840,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "jumping",
+          "label": "Jumping",
+          "rowIndex": 4,
+          "frames": 5,
+          "durationMs": 900,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "failed",
+          "label": "Failed",
+          "rowIndex": 5,
+          "frames": 8,
+          "durationMs": 1120,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "waiting",
+          "label": "Waiting",
+          "rowIndex": 6,
+          "frames": 6,
+          "durationMs": 1260,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "running",
+          "label": "Running",
+          "rowIndex": 7,
+          "frames": 6,
+          "durationMs": 960,
+          "semantic": null,
+          "notes": ""
+        },
+        {
+          "key": "review",
+          "label": "Review",
+          "rowIndex": 8,
+          "frames": 6,
+          "durationMs": 1080,
+          "semantic": null,
+          "notes": ""
+        }
+      ],
+      "defaultPreviewRow": "idle"
+    },
     {
       "slug": "cloudhoof",
       "folder": "pets/cloudhoof",

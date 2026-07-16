@@ -1,0 +1,36 @@
+{
+  "id": "frostpuff",
+  "displayName": "Frostpuff",
+  "description": "A soft ice-blue fluffy four-legged companion with tiny warm coral facial marks and a gentle curious presence.",
+  "spritesheetPath": "spritesheet.webp",
+  "spriteVersionNumber": 2,
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 2288
+  },
+  "atlasRowSemantics": {
+    "idle": "idle-blink",
+    "running-right": "walk-right",
+    "running-left": "walk-left-mirrored-approved",
+    "waving": "greeting",
+    "jumping": "jump",
+    "failed": "deflated-reaction",
+    "waiting": "needs-input",
+    "running": "active-processing",
+    "review": "focused-review",
+    "look-row-9": "look-000-through-157.5-clockwise",
+    "look-row-10": "look-180-through-337.5-clockwise"
+  },
+  "qa": {
+    "runDir": "hatch-runs/frostpuff-20260711",
+    "validation": "validation-extended.json",
+    "despill": "despill-report.json",
+    "visualReview": "../qa/final-visual-qa.md",
+    "directionSemantics": "../qa/direction-semantics.json",
+    "blindReviewStatus": "independent-mechanism-unavailable"
+  }
+}
