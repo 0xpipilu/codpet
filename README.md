@@ -2,6 +2,20 @@
 
 [English](#english) | [简体中文](#简体中文)
 
+## Built with OpenAI
+
+CodPet was developed using OpenAI Codex and GPT-5.6.
+
+Codex was used for:
+- Building the companion management prototype
+- Developing automation workflows
+- Debugging compatibility issues
+- Iterating product features
+
+GPT-5.6 was used for:
+- Product architecture exploration
+- Technical problem solving
+- Documentation and project storytelling
 ---
 
 <a name="english"></a>
