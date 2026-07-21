@@ -1,0 +1,77 @@
+{
+  "id": "puglet",
+  "displayName": "Puglet",
+  "description": "A gentle hand-painted cream pug with dark chocolate ears and muzzle, round black eyes, short splayed legs, and a curled tail.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp",
+  "style": "painterly hand-painted paper-and-crayon mascot",
+  "baseSceneNotes": [
+    "Puglet is one compact handmade cream pug with a broad low body, flat round face, dark brown ears and muzzle, short legs, and a connected curled tail.",
+    "The orange source background and lower-right signature are excluded.",
+    "Look directions use the original eye patches, eyes, muzzle, head, ears, and tail follow-through; the whole sprite does not rotate."
+  ],
+  "states": {
+    "idle": {"atlasRow":"idle","notes":"Quiet breathing and blink loop with planted paws."},
+    "walk": {"atlasRows":["running-right","running-left"],"notes":"Short-leg directional drag movement with the curled tail following."},
+    "curious": {"atlasRow":"review","notes":"Focused head tilt and eye attention without new props."},
+    "happy": {"atlasRow":"waving","notes":"Friendly existing front-paw greeting."},
+    "sleep": {"atlasRow":"waiting","notes":"Expectant asking pose for approval or user input."},
+    "hop": {"atlasRow":"jumping","notes":"Vertical anticipation, lift, peak, descent, and settle."},
+    "melancholy": {"atlasRow":"failed","notes":"Slumped, sad reaction with no detached effects."},
+    "active": {"atlasRow":"running","notes":"Focused non-locomotion task-processing loop without props."}
+  },
+  "atlasRowSemantics": {
+    "idle":"idle",
+    "running-right":"walk-right",
+    "running-left":"walk-left",
+    "waving":"happy",
+    "jumping":"hop",
+    "failed":"melancholy",
+    "waiting":"waiting-for-input",
+    "running":"active-processing",
+    "review":"curious-review",
+    "look-row-9":"000 up through 157.5 down-right",
+    "look-row-10":"180 down through 337.5 up-left"
+  },
+  "requestedActionMap": {
+    "idle":{"atlasRow":"idle","status":"implemented"},
+    "roll_right":{"atlasRow":"running-right","status":"implemented"},
+    "roll_left":{"atlasRow":"running-left","status":"implemented"},
+    "curious":{"atlasRow":"review","status":"implemented"},
+    "happy":{"atlasRow":"waving","status":"implemented"},
+    "sleep":{"atlasRow":"waiting","status":"implemented"},
+    "hop":{"atlasRow":"jumping","status":"implemented"},
+    "melancholy":{"atlasRow":"failed","status":"implemented"},
+    "active_support":{"atlasRow":"running","status":"implemented"},
+    "drag":{"leftAtlasRow":"running-left","rightAtlasRow":"running-right","status":"implemented"}
+  },
+  "lookDirections": {
+    "atlasRows":["look-row-9","look-row-10"],
+    "order":["000","022.5","045","067.5","090","112.5","135","157.5","180","202.5","225","247.5","270","292.5","315","337.5"],
+    "coordinateSystem":"viewer/screen coordinates",
+    "mechanics":"Lower paws and torso stay anchored; original eyes, face, muzzle, head, ears, and tail follow the gaze continuously."
+  },
+  "dragFacingValidation": {
+    "rule":"deltaX < 0 => facing left; deltaX > 0 => facing right",
+    "leftDragUses":"running-left",
+    "rightDragUses":"running-right",
+    "leftRowDerivedFrom":"framewise-horizontal-mirror-preserving-order",
+    "rightRowDerivedFrom":"generated-directly",
+    "manualVerification":[
+      "left drag uses the true left-facing gait row",
+      "right drag uses the true right-facing gait row",
+      "Puglet has no handed prop whose meaning changes under mirroring",
+      "the curled tail stays connected and the face remains recognizable at small size"
+    ]
+  },
+  "qa": {
+    "runDir":"output/hatch-pet/puglet-run",
+    "validation":"final/validation-extended.json",
+    "despill":"final/despill-report.json",
+    "contactSheet":"qa/contact-sheet-extended.png",
+    "directionSheet":"qa/look-directions.png",
+    "directionSemantics":"qa/direction-semantics.json",
+    "continuity":"qa/look-continuity.json",
+    "review":"qa/review.json"
+  }
+}
