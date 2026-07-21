@@ -210,10 +210,10 @@
         transition: filter 250ms ease, opacity 200ms ease;
       }
 
-      /* Grayscale static base */
+      /* Translucent original-color static base */
       .sprite-static-gray {
-        filter: grayscale(100%);
-        opacity: 0.8;
+        filter: grayscale(0%);
+        opacity: 0.58;
         z-index: 2;
       }
 
