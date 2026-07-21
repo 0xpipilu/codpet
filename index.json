@@ -1,5 +1,5 @@
 {
-  "count": 148,
+  "count": 147,
   "pets": [
     {
       "slug": "stripepup",
@@ -10,110 +10,6 @@
       "spritesheetPath": "spritesheet.webp",
       "petJsonPath": "pets/stripepup/pet.json",
       "spritesheetFile": "pets/stripepup/spritesheet.webp",
-      "stateNames": [],
-      "stateCount": 0,
-      "atlas": {
-        "columns": 8,
-        "rows": 11,
-        "frameWidth": 192,
-        "frameHeight": 208,
-        "sheetWidth": 1536,
-        "sheetHeight": 2288
-      },
-      "previewRows": [
-        {
-          "key": "idle",
-          "label": "Idle",
-          "rowIndex": 0,
-          "frames": 6,
-          "durationMs": 1100,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "running-right",
-          "label": "Run Right",
-          "rowIndex": 1,
-          "frames": 8,
-          "durationMs": 980,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "running-left",
-          "label": "Run Left",
-          "rowIndex": 2,
-          "frames": 8,
-          "durationMs": 980,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "waving",
-          "label": "Waving",
-          "rowIndex": 3,
-          "frames": 4,
-          "durationMs": 840,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "jumping",
-          "label": "Jumping",
-          "rowIndex": 4,
-          "frames": 5,
-          "durationMs": 900,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "failed",
-          "label": "Failed",
-          "rowIndex": 5,
-          "frames": 8,
-          "durationMs": 1120,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "waiting",
-          "label": "Waiting",
-          "rowIndex": 6,
-          "frames": 6,
-          "durationMs": 1260,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "running",
-          "label": "Running",
-          "rowIndex": 7,
-          "frames": 6,
-          "durationMs": 960,
-          "semantic": null,
-          "notes": ""
-        },
-        {
-          "key": "review",
-          "label": "Review",
-          "rowIndex": 8,
-          "frames": 6,
-          "durationMs": 1080,
-          "semantic": null,
-          "notes": ""
-        }
-      ],
-      "defaultPreviewRow": "idle"
-    },
-    {
-      "slug": "flowerling",
-      "folder": "pets/flowerling",
-      "id": "flowerling",
-      "displayName": "Flowerling",
-      "description": "A hand-drawn flower girl with a flower-shaped hair silhouette, a floral cape-dress, and a tall flower stem held in both hands.",
-      "spritesheetPath": "spritesheet.webp",
-      "petJsonPath": "pets/flowerling/pet.json",
-      "spritesheetFile": "pets/flowerling/spritesheet.webp",
       "stateNames": [],
       "stateCount": 0,
       "atlas": {
