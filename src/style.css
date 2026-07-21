@@ -237,8 +237,8 @@
       }
 
       .tile:hover .sprite-static-gray {
-        filter: grayscale(100%);
-        opacity: 0.8;
+        filter: grayscale(0%);
+        opacity: 0.58;
       }
 
       .tile.playing .sprite-player {

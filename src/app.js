@@ -262,7 +262,7 @@ const INLINED_PETS = [];
         }
         const colorEl = tile._spriteStaticColor;
         if (colorEl) {
-          // Snap back to grayscale instantly on leave by clearing inline styles to default CSS
+          // Snap back to the default static preview by clearing inline styles.
           colorEl.style.animation = "";
           colorEl.style.transition = "";
           colorEl.style.clipPath = "";
