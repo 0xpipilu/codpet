@@ -167,206 +167,206 @@ python3 scripts/generate_favicon.py
 
 ## Pets Gallery / 宠物画廊
 
-Here is a visual list of all the **147** interactive pixel pets available in Codpet:
+Here is a visual list of all the **148** interactive pixel pets available in Codpet:
 
 <table align="center">
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/interfold-loom/animated.svg?v=20260601c" width="96" alt="Interfold Loom" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/stripepup/animated.svg?v=20260601c" width="96" alt="Stripepup" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/daisy/animated.svg?v=20260601c" width="96" alt="Daisy" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/limelet/animated.svg?v=20260601c" width="96" alt="Limelet" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/bath-bear/animated.svg?v=20260601c" width="96" alt="Bath Bear" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/hammer-blob/animated.svg?v=20260601c" width="96" alt="Hammer Blob" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/puglet/animated.svg?v=20260601c" width="96" alt="Puglet" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/puglet/animated.svg?v=20260601c" width="96" alt="Puglet" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/bluebop/animated.svg?v=20260601c" width="96" alt="Bluebop" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/raccoon/animated.svg?v=20260601c" width="96" alt="Raccoon" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/maki/animated.svg?v=20260601c" width="96" alt="Maki" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/bloomwrap/animated.svg?v=20260601c" width="96" alt="Bloomwrap" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/mossbeak/animated.svg?v=20260601c" width="96" alt="Mossbeak" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/yolkie/animated.svg?v=20260601c" width="96" alt="Yolkie" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/yolkie/animated.svg?v=20260601c" width="96" alt="Yolkie" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/piggles/animated.svg?v=20260601c" width="96" alt="Piggles" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/sunbeam/animated.svg?v=20260601c" width="96" alt="Sunbeam" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/crayon-pup/animated.svg?v=20260601c" width="96" alt="Crayon Pup" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/jade-tiger/animated.svg?v=20260601c" width="96" alt="Jade Tiger" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/mosskin/animated.svg?v=20260601c" width="96" alt="Mosskin" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/inkcoil/animated.svg?v=20260601c" width="96" alt="Inkcoil" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/inkcoil/animated.svg?v=20260601c" width="96" alt="Inkcoil" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/corsair-fox/animated.svg?v=20260601c" width="96" alt="Corsair Fox" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/frostwhisk/animated.svg?v=20260601c" width="96" alt="Frostwhisk" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/moss-tail/animated.svg?v=20260601c" width="96" alt="Moss Tail" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tidecurl/animated.svg?v=20260601c" width="96" alt="Tidecurl" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tiggle/animated.svg?v=20260601c" width="96" alt="Tiggle" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/frostpuff/animated.svg?v=20260601c" width="96" alt="Frostpuff" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/frostpuff/animated.svg?v=20260601c" width="96" alt="Frostpuff" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/pepper/animated.svg?v=20260601c" width="96" alt="Pepper" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/nuzzle/animated.svg?v=20260601c" width="96" alt="Nuzzle" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/cotton/animated.svg?v=20260601c" width="96" alt="Cotton" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/lao/animated.svg?v=20260601c" width="96" alt="Lao" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/frizzle/animated.svg?v=20260601c" width="96" alt="Frizzle" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/clover/animated.svg?v=20260601c" width="96" alt="Clover" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/clover/animated.svg?v=20260601c" width="96" alt="Clover" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/cloudhoof/animated.svg?v=20260601c" width="96" alt="Cloudhoof" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/sporty-plush-puppy/animated.svg?v=20260601c" width="96" alt="Sporty Plush Puppy" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/caddie-pup/animated.svg?v=20260601c" width="96" alt="Caddie Pup" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/momo/animated.svg?v=20260601c" width="96" alt="Momo" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/nori/animated.svg?v=20260601c" width="96" alt="Nori" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/rosie/animated.svg?v=20260601c" width="96" alt="Rosie" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/rosie/animated.svg?v=20260601c" width="96" alt="Rosie" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/aster/animated.svg?v=20260601c" width="96" alt="Aster" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/wizz/animated.svg?v=20260601c" width="96" alt="Wizz" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/taffy/animated.svg?v=20260601c" width="96" alt="Taffy" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/nyxo/animated.svg?v=20260601c" width="96" alt="Nyxo" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/nivo/animated.svg?v=20260601c" width="96" alt="Nivo" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/pico/animated.svg?v=20260601c" width="96" alt="Pico" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/pico/animated.svg?v=20260601c" width="96" alt="Pico" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/mallow/animated.svg?v=20260601c" width="96" alt="Mallow" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/thorn/animated.svg?v=20260601c" width="96" alt="Thorn" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/purl/animated.svg?v=20260601c" width="96" alt="Purl" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/Cinder/animated.svg?v=20260601c" width="96" alt="Cinder" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brim/animated.svg?v=20260601c" width="96" alt="Brim" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/tomo/animated.svg?v=20260601c" width="96" alt="Tomo" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/tomo/animated.svg?v=20260601c" width="96" alt="Tomo" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/petal/animated.svg?v=20260601c" width="96" alt="Petal" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/buzz/animated.svg?v=20260601c" width="96" alt="Buzz" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/mochi/animated.svg?v=20260601c" width="96" alt="Mochi" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brik/animated.svg?v=20260601c" width="96" alt="Brik" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/bun/animated.svg?v=20260601c" width="96" alt="Bun" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/mori/animated.svg?v=20260601c" width="96" alt="Mori" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/mori/animated.svg?v=20260601c" width="96" alt="Mori" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/puff/animated.svg?v=20260601c" width="96" alt="Puff" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/inkbit/animated.svg?v=20260601c" width="96" alt="Inkbit" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/glowtail/animated.svg?v=20260601c" width="96" alt="Glowtail" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/luna/animated.svg?v=20260601c" width="96" alt="Luna" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/grit/animated.svg?v=20260601c" width="96" alt="Grit" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/skiff/animated.svg?v=20260601c" width="96" alt="Skiff" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/skiff/animated.svg?v=20260601c" width="96" alt="Skiff" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/floe/animated.svg?v=20260601c" width="96" alt="Floe" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rex/animated.svg?v=20260601c" width="96" alt="Rex" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/mack/animated.svg?v=20260601c" width="96" alt="Mack" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/moro/animated.svg?v=20260601c" width="96" alt="Moro" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/dusty/animated.svg?v=20260601c" width="96" alt="Dusty" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/pinka/animated.svg?v=20260601c" width="96" alt="Pinka" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/pinka/animated.svg?v=20260601c" width="96" alt="Pinka" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/patch/animated.svg?v=20260601c" width="96" alt="Patch" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/miso/animated.svg?v=20260601c" width="96" alt="Miso" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/nib/animated.svg?v=20260601c" width="96" alt="Nib" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rook/animated.svg?v=20260601c" width="96" alt="Rook" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/bruno/animated.svg?v=20260601c" width="96" alt="Bruno" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/pebb/animated.svg?v=20260601c" width="96" alt="Pebb" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/pebb/animated.svg?v=20260601c" width="96" alt="Pebb" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/skipp/animated.svg?v=20260601c" width="96" alt="Skipp" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/pip/animated.svg?v=20260601c" width="96" alt="Pip" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brew/animated.svg?v=20260601c" width="96" alt="Brew" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/spike/animated.svg?v=20260601c" width="96" alt="Spike" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/spot/animated.svg?v=20260601c" width="96" alt="Spot" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/sunny/animated.svg?v=20260601c" width="96" alt="Sunny" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/sunny/animated.svg?v=20260601c" width="96" alt="Sunny" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/glint/animated.svg?v=20260601c" width="96" alt="Glint" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/whisk/animated.svg?v=20260601c" width="96" alt="Whisk" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/snoo/animated.svg?v=20260601c" width="96" alt="Snoo" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tomoo/animated.svg?v=20260601c" width="96" alt="Tomoo" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/jem/animated.svg?v=20260601c" width="96" alt="Jem" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/pinky/animated.svg?v=20260601c" width="96" alt="Pinky" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/pinky/animated.svg?v=20260601c" width="96" alt="Pinky" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/dart/animated.svg?v=20260601c" width="96" alt="Dart" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/koi/animated.svg?v=20260601c" width="96" alt="Koi" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/heron/animated.svg?v=20260601c" width="96" alt="Heron" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/stilt/animated.svg?v=20260601c" width="96" alt="Stilt" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/marten/animated.svg?v=20260601c" width="96" alt="Marten" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/scarlet-ibis/animated.svg?v=20260601c" width="96" alt="Scarlet Ibis" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/scarlet-ibis/animated.svg?v=20260601c" width="96" alt="Scarlet Ibis" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rosefinch/animated.svg?v=20260601c" width="96" alt="Rosefinch" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/vermora/animated.svg?v=20260601c" width="96" alt="Vermora" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tsuru/animated.svg?v=20260601c" width="96" alt="tsuru" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/velmour/animated.svg?v=20260601c" width="96" alt="velmour" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/flamingo/animated.svg?v=20260601c" width="96" alt="flamingo" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/white-eye/animated.svg?v=20260601c" width="96" alt="White-Eye" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/white-eye/animated.svg?v=20260601c" width="96" alt="White-Eye" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/turaco/animated.svg?v=20260601c" width="96" alt="Turaco" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/cardinal/animated.svg?v=20260601c" width="96" alt="Cardinal" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/honeybee/animated.svg?v=20260601c" width="96" alt="Honeybee" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/blackbird/animated.svg?v=20260601c" width="96" alt="Blackbird" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/redcheek/animated.svg?v=20260601c" width="96" alt="Redcheek" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/droopy7/animated.svg?v=20260601c" width="96" alt="Droopy-7" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/droopy7/animated.svg?v=20260601c" width="96" alt="Droopy-7" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/knight/animated.svg?v=20260601c" width="96" alt="Knight" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/butch-dog/animated.svg?v=20260601c" width="96" alt="Butch Dog" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rustango/animated.svg?v=20260601c" width="96" alt="Rustango" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rustveil/animated.svg?v=20260601c" width="96" alt="Rustveil" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rustbeak/animated.svg?v=20260601c" width="96" alt="RustBeak" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/brassbun/animated.svg?v=20260601c" width="96" alt="Brassbun" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/brassbun/animated.svg?v=20260601c" width="96" alt="Brassbun" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/copper-cat-package/animated.svg?v=20260601c" width="96" alt="Copper Cat" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brassprout/animated.svg?v=20260601c" width="96" alt="Brassprout" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/curlcap-pet/animated.svg?v=20260601c" width="96" alt="Curlcap" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tinward-pet/animated.svg?v=20260601c" width="96" alt="Tinward" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/Budley-pet/animated.svg?v=20260601c" width="96" alt="Budley" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/walle/animated.svg?v=20260601c" width="96" alt="Scrapling" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/walle/animated.svg?v=20260601c" width="96" alt="Scrapling" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/wheelbox/animated.svg?v=20260601c" width="96" alt="Wheelbox" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/battle-damaged-idle/animated.svg?v=20260601c" width="96" alt="Battle-Damaged Idle" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/rivet-puff/animated.svg?v=20260601c" width="96" alt="Rivet Puff" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/moss-maw/animated.svg?v=20260601c" width="96" alt="Moss Maw" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tavern-lampbot/animated.svg?v=20260601c" width="96" alt="Tavern Lampbot" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/mean guard/animated.svg?v=20260601c" width="96" alt="Mean Guard" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/mean guard/animated.svg?v=20260601c" width="96" alt="Mean Guard" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/machi-foxy/animated.svg?v=20260601c" width="96" alt="Machi Foxy" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brine-star/animated.svg?v=20260601c" width="96" alt="Brine Star" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brinepaw/animated.svg?v=20260601c" width="96" alt="Brinepaw" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brigbeak/animated.svg?v=20260601c" width="96" alt="Brigbeak" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/dandy-beak/animated.svg?v=20260601c" width="96" alt="Dandy Beak" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/samorost-boxbot/animated.svg?v=20260601c" width="96" alt="Samorost Boxbot" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/samorost-boxbot/animated.svg?v=20260601c" width="96" alt="Samorost Boxbot" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/wreckling/animated.svg?v=20260601c" width="96" alt="Wreckling" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/springtrap-machi/animated.svg?v=20260601c" width="96" alt="Springtrap Machi" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/freddy-machi/animated.svg?v=20260601c" width="96" alt="Freddy Machi" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/climber-stick/animated.svg?v=20260601c" width="96" alt="Climber" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/vendo/animated.svg?v=20260601c" width="96" alt="Vendo" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/pub-player/animated.svg?v=20260601c" width="96" alt="Pub Player" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/pub-player/animated.svg?v=20260601c" width="96" alt="Pub Player" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/castle-guard/animated.svg?v=20260601c" width="96" alt="Castle Guard" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/pipe-wrench-robot/animated.svg?v=20260601c" width="96" alt="Pipe Wrench Robot" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/machi-cat/animated.svg?v=20260601c" width="96" alt="Machi Cat" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/tin-grin/animated.svg?v=20260601c" width="96" alt="Tin Grin" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/flying robot/animated.svg?v=20260601c" width="96" alt="Rotor Josef" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/scrib-codex-pet/animated.svg?v=20260601c" width="96" alt="Scrib" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/scrib-codex-pet/animated.svg?v=20260601c" width="96" alt="Scrib" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/machi-chef/animated.svg?v=20260601c" width="96" alt="Machi Chef" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/machi-dog/animated.svg?v=20260601c" width="96" alt="Machi Dog" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/brass-reed/animated.svg?v=20260601c" width="96" alt="Brass Reed" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/the-drummer/animated.svg?v=20260601c" width="96" alt="The Drummer" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/smoking-robot/animated.svg?v=20260601c" width="96" alt="Smoking Robot" /></td>
-    <td align="center" valign="middle" width="160" height="160"><img src="pets/fat-robot/animated.svg?v=20260601c" width="96" alt="Fat Robot" /></td>
   </tr>
   <tr>
+    <td align="center" valign="middle" width="160" height="160"><img src="pets/fat-robot/animated.svg?v=20260601c" width="96" alt="Fat Robot" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/machi-owl/animated.svg?v=20260601c" width="96" alt="Machi Owl" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/dog-creak/animated.svg?v=20260601c" width="96" alt="Dog Creak" /></td>
     <td align="center" valign="middle" width="160" height="160"><img src="pets/josef-bot/animated.svg?v=20260601c" width="96" alt="Josef Bot" /></td>
-    <td align="center" valign="middle" width="160" height="160">&nbsp;</td>
     <td align="center" valign="middle" width="160" height="160">&nbsp;</td>
     <td align="center" valign="middle" width="160" height="160">&nbsp;</td>
   </tr>
